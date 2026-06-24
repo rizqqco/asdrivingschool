@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AS Driving School</title>
+  <meta name="description" content="Get in touch with American Star Driving School. Call (732) 783-1750 or fill out our contact form to enroll or ask questions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-top">American Star</span>
+      <span class="logo-bottom">Driving School</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="permit.html">Permit</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Ready to enroll or have questions? Reach out — we'd love to hear from you.</p>
+</div>
+
+<section>
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <h2>Send Us a Message</h2>
+        <!--
+          SETUP REQUIRED: Replace YOUR_FORMSPREE_ID below with your actual Formspree form ID.
+          1. Go to https://formspree.io and sign up (free)
+          2. Create a new form — set the email to AmericanstarDS@gmail.com
+          3. Copy your form ID (looks like: xpwzabcd)
+          4. Replace YOUR_FORMSPREE_ID in the action URL below
+        -->
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Interested In</label>
+            <select id="service" name="service">
+              <option value="">-- Select a package --</option>
+              <option value="Bronze Package ($300)">Bronze Package ($300)</option>
+              <option value="Silver Package ($500)">Silver Package ($500)</option>
+              <option value="Gold Package ($700)">Gold Package ($700)</option>
+              <option value="2-Hour Lesson ($130)">2-Hour Lesson ($130)</option>
+              <option value="Road Test ($130)">Road Test ($130)</option>
+              <option value="Road Test + Prep ($170)">Road Test + Preparation ($170)</option>
+              <option value="Teen Special ($380)">Teen Special ($380)</option>
+              <option value="Other / Question">Other / Question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us about yourself, your location, preferred schedule, or any questions you have..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+          <div class="success-msg" id="successMsg">✅ Thanks for reaching out! We'll get back to you soon.</div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info-wrap">
+        <h2>Get in Touch Directly</h2>
+
+        <div class="contact-detail">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:7327831750">(732) 783-1750</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:AmericanstarDS@gmail.com?subject=I would like to take driving lessons!">AmericanstarDS@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>New Brunswick, NJ, USA</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:32px;">Opening Hours</h2>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Tuesday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Wednesday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Thursday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Friday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Saturday</td><td>10:00 am – 4:00 pm</td></tr>
+          <tr><td>Sunday</td><td>10:00 am – 4:00 pm</td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>American Star Driving School</h4>
+      <p>Comprehensive driving instruction tailored to your needs. Serving New Jersey since 2023.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Information</h4>
+      <a href="mailto:AmericanstarDS@gmail.com">AmericanstarDS@gmail.com</a>
+      <a href="tel:7327831750">(732) 783-1750</a>
+      <p>New Brunswick, NJ, USA</p>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Monday – Friday: 9am – 6pm</p>
+      <p>Saturday – Sunday: 10am – 4pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">©2023 by American Star Driving School. All rights reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('open');
+  });
+
+  // Formspree AJAX submission
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('successMsg');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const btn = form.querySelector('.btn-submit');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        successMsg.style.display = 'block';
+        btn.textContent = 'Sent!';
+      } else {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please try emailing us directly at AmericanstarDS@gmail.com');
+      }
+    } catch {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      alert('Network error. Please try emailing us directly at AmericanstarDS@gmail.com');
+    }
+  });
+</script>
+</body>
+</html>

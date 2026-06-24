@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permit | AS Driving School</title>
+  <meta name="description" content="Getting a NJ learner's permit? Learn what documents you need and check out our Teen Special package at American Star Driving School.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-top">American Star</span>
+      <span class="logo-bottom">Driving School</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="permit.html" class="active">Permit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<img class="permit-hero-img" src="images/permit-hero.jpg" alt="Getting a Driving Permit">
+
+<section>
+  <div class="container" style="max-width:800px;">
+    <h1 class="section-title">Getting a Permit</h1>
+    <div class="divider"></div>
+
+    <h2 style="font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:16px;">Documents Required</h2>
+    <p style="color:var(--text-muted);margin-bottom:16px;">To obtain your NJ learner's permit, bring the following documents to the DMV:</p>
+    <ul class="docs-list">
+      <li>Original birth certificate or US passport (expired not more than 3 years)</li>
+      <li>High School waiver card (blue squared card)</li>
+      <li>Social Security card, copy, or ITIN Number</li>
+      <li>Proof of address</li>
+    </ul>
+
+    <p style="color:var(--text-muted);font-size:0.95rem;margin-top:8px;">Need help navigating the permit process? We're here to guide you every step of the way. <a href="contact.html" style="color:var(--gold);font-weight:600;">Contact us</a> with any questions.</p>
+  </div>
+</section>
+
+<!-- Teen Special -->
+<section style="background:var(--light-bg);">
+  <div class="container">
+    <h2 class="section-title">Teen Special</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Our all-in-one package for teens getting started — permit help, behind-the-wheel training, and more.</p>
+
+    <div class="teen-card">
+      <h3>🎓 Teen Special Package</h3>
+      <ul>
+        <li>Documents can be dropped off at our office or pick-up arranged by appointment</li>
+        <li>Vision test included</li>
+        <li>3 sessions of 2 hours each (6 hours total) of one-on-one behind-the-wheel instruction</li>
+        <li>Permit validation including road test scheduling</li>
+        <li>Insurance certificate upon completion</li>
+        <li><em>Road test is NOT included in this package</em></li>
+      </ul>
+      <div class="price">$380 + Distance</div>
+      <a href="contact.html" class="btn">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>American Star Driving School</h4>
+      <p>Comprehensive driving instruction tailored to your needs. Serving New Jersey since 2023.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Information</h4>
+      <a href="mailto:AmericanstarDS@gmail.com">AmericanstarDS@gmail.com</a>
+      <a href="tel:7327831750">(732) 783-1750</a>
+      <p>New Brunswick, NJ, USA</p>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Monday – Friday: 9am – 6pm</p>
+      <p>Saturday – Sunday: 10am – 4pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">©2023 by American Star Driving School. All rights reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
